@@ -1,25 +1,25 @@
 @extends('layouts.master')
 
-@section('title')
+@section('tittle')
     Transaksi Penjualan
 @endsection
 
 @section('badge')
     @parent
-    <li class="active">Transaksi Penjualan</li>
+    <li class="breadcrumb-item  active">Transaksi Penjualan</li>
 @endsection
 
 @section('content')
 <div class="row">
     <div class="col-lg-12">
-        <div class="box">
-            <div class="box-body">
+        <div class="card">
+            <div class="card-body">
                 <div class="alert alert-success alert-dismissible">
                     <i class="fa fa-check icon"></i>
                     Data Transaksi telah selesai.
                 </div>
             </div>
-            <div class="box-footer">
+            <div class="card-footer">
                 @if ($setting->tipe_nota == 1)
                 <button class="btn btn-warning btn-flat" onclick="notaKecil('{{ route('transaksi.nota_kecil') }}', 'Nota Kecil')">Cetak Ulang Nota</button>
                 @else

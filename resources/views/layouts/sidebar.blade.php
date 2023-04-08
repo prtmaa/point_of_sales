@@ -136,7 +136,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/UI/icons.html" class="nav-link">
+                    <a href="{{url('setting')}}" class="nav-link">
                       <i class="fa fa-cogs nav-icon"></i>
                       <p>Pengaturan</p>
                     </a>

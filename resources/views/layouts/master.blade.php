@@ -42,11 +42,11 @@
   </div>
 
   <!-- Navbar -->
-  @include('layouts.header')
+  @includeIf('layouts.header')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  @include('layouts.sidebar')
+  @includeIf('layouts.sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -121,6 +121,13 @@
 
 {{-- validator --}}
 <script src="{{asset('js/validator.min.js')}}"></script>
+
+<script>
+  function preview(selector, temporaryFile, width = 200)  {
+      $(selector).empty();
+      $(selector).append(`<img src="${window.URL.createObjectURL(temporaryFile)}" width="${width}">`);
+  }
+</script>
 
 @stack('js')
 </body>
