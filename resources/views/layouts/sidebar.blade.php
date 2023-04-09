@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">{{config ('app.name')}}</span>
+      <span class="brand-text font-weight-light">{{$setting->nama_perusahaan}}</span>
     </a>
 
     <!-- Sidebar -->
@@ -10,7 +10,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="{{$setting->path_logo}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">{{auth()->user()->name}}</a>
@@ -35,7 +35,7 @@
 
               <li class="nav-item">
                 <a href="#" class="nav-link active" >
-                  <i class="nav-icon fas fa-tree"></i>
+                  <i class="nav-icon fa fa-cubes"></i>
                   <p>
                     Master
                     <i class="fas fa-angle-left right"></i>
@@ -70,8 +70,8 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="nav-icon fas fa-tree"></i>
+                <a href="#" class="nav-link active" >
+                  <i class="nav-icon fa fa-cart-arrow-down"></i>
                   <p>
                     Transaksi
                     <i class="fas fa-angle-left right"></i>
@@ -122,7 +122,7 @@
 
               <li class="nav-item">
                 <a href="#" class="nav-link active">
-                  <i class="nav-icon fas fa-tree"></i>
+                  <i class="fa fa-cogs nav-icon"></i>
                   <p>
                     System
                     <i class="fas fa-angle-left right"></i>
@@ -146,7 +146,7 @@
 
               <li class="nav-item">
                 <a href="#" class="nav-link active" onclick="document.getElementById('logout-form').submit()">
-                    <i class="nav-icon fas fa-right-from"></i>
+                    <i class="nav-icon fa fa-long-arrow-alt-left"></i>
                   <p>
                     Logout
                   </p>
