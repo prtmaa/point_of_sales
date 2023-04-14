@@ -101,7 +101,7 @@
 <!-- AdminLTE App -->
 <script src="{{asset('adminlte/dist/js/adminlte.js')}}"></script>
 
-{{-- <script src="{{asset('adminlte/dist/js/pages/dashboard2.js')}}"></script> --}}
+
 
 {{-- validator --}}
 <script src="{{asset('js/validator.min.js')}}"></script>
